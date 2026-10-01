@@ -1,0 +1,1312 @@
+/* ========================================= */
+/* GENERAL SETTINGS */
+/* ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #0d0d0d;
+
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+
+/* ========================================= */
+/* IDENTITY VERIFICATION SCREEN */
+/* ========================================= */
+
+.verification-box {
+    width: 90%;
+    max-width: 420px;
+
+    background-color: #171717;
+
+    border: 1px solid #444;
+    border-radius: 15px;
+
+    padding: 35px;
+
+    text-align: center;
+}
+
+.verification-box h1 {
+    margin-top: 0;
+
+    font-size: 26px;
+}
+
+.verification-box p {
+    color: #bcbcbc;
+
+    line-height: 1.5;
+}
+
+
+/* FORM LABELS */
+
+label {
+    display: block;
+
+    text-align: left;
+
+    margin-top: 20px;
+    margin-bottom: 7px;
+
+    font-size: 13px;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    color: #cccccc;
+}
+
+
+/* FORM INPUTS */
+
+input {
+    width: 100%;
+
+    padding: 13px;
+
+    background-color: #222;
+
+    color: white;
+
+    border: 1px solid #555;
+    border-radius: 7px;
+
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+
+    border-color: white;
+}
+
+
+/* BUTTONS */
+
+button {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 7px;
+
+    background-color: white;
+
+    color: black;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #dddddd;
+}
+
+
+/* VERIFICATION MESSAGE */
+
+#message {
+    min-height: 25px;
+
+    margin-top: 20px;
+}
+
+small {
+    display: block;
+
+    margin-top: 15px;
+
+    color: #777;
+}
+
+
+/* ========================================= */
+/* WELCOME SCREEN */
+/* ========================================= */
+
+.welcome-screen {
+    display: none;
+
+    width: 90%;
+    max-width: 500px;
+
+    text-align: center;
+}
+
+.welcome-screen .heart {
+    font-size: 50px;
+
+    margin-bottom: 20px;
+}
+
+.welcome-screen .confirmed {
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    color: #999;
+}
+
+.welcome-screen h2 {
+    font-size: 24px;
+
+    margin-top: 25px;
+}
+
+.welcome-screen h1 {
+    font-size: 42px;
+
+    margin: 35px 0;
+
+    line-height: 1.2;
+}
+
+.welcome-screen p {
+    color: #bbb;
+}
+
+
+/* ========================================= */
+/* MAIN GIFT SCREEN */
+/* ========================================= */
+
+.gift-screen {
+    display: none;
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    background-color: #fff8f5;
+
+    color: #4a1f24;
+
+    font-family: Georgia, serif;
+}
+
+
+/* ========================================= */
+/* OPENING / HERO */
+/* ========================================= */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.little-title {
+    margin-bottom: 25px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    color: #a45a63;
+}
+
+.hero h1 {
+    margin: 0;
+
+    font-size: 55px;
+
+    line-height: 1.1;
+
+    color: #711f2b;
+}
+
+.hero-message {
+    margin-top: 25px;
+
+    font-size: 18px;
+
+    font-style: italic;
+
+    color: #87535a;
+}
+
+.scroll-message {
+    margin-top: 70px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    color: #a45a63;
+}
+
+
+/* ========================================= */
+/* OUR STORY INTRO */
+/* ========================================= */
+
+.story {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 100px 25px;
+}
+
+.section-number {
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    color: #bd8188;
+}
+
+.story h2 {
+    margin: 15px 0;
+
+    font-size: 42px;
+}
+
+.story p {
+    max-width: 500px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    line-height: 1.8;
+
+    color: #87535a;
+}
+
+
+/* ========================================= */
+/* STORY SECTIONS */
+/* ========================================= */
+
+.first-meeting,
+.first-date,
+.first-summer,
+.official {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 25px;
+}
+
+
+/* ========================================= */
+/* HOW WE MET */
+/* ========================================= */
+
+.first-meeting {
+    background-color: #f9ece9;
+}
+
+
+/* ========================================= */
+/* FIRST DATE */
+/* ========================================= */
+
+.first-date {
+    background-color: #fff8f5;
+}
+
+
+/* ========================================= */
+/* FIRST SUMMER */
+/* ========================================= */
+
+.first-summer {
+    background-color: #f9ece9;
+}
+
+
+/* ========================================= */
+/* STORY HEADINGS */
+/* ========================================= */
+
+.first-meeting h2,
+.first-date h2,
+.first-summer h2,
+.official h2 {
+    margin: 15px 0 25px;
+
+    font-size: 42px;
+
+    color: #711f2b;
+}
+
+
+/* ========================================= */
+/* STORY PARAGRAPHS */
+/* ========================================= */
+
+.first-meeting p,
+.first-date p,
+.first-summer p,
+.official p {
+    max-width: 550px;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #87535a;
+}
+
+
+/* ========================================= */
+/* SPECIAL SENTENCES */
+/* ========================================= */
+
+.special-line {
+    margin-top: 35px;
+
+    font-size: 22px !important;
+
+    font-style: italic;
+
+    color: #711f2b !important;
+}
+
+
+/* ========================================= */
+/* JULY 26 - OFFICIAL */
+/* ========================================= */
+
+.official {
+    background-color: #711f2b;
+}
+
+.official .section-number {
+    color: #e7b9bd;
+}
+
+.official h2 {
+    color: #fff8f5;
+}
+
+.official p {
+    color: #f1d9d9;
+}
+
+.official .special-line {
+    color: white !important;
+
+    font-size: 26px !important;
+}
+
+/* ========================================= */
+/* POLAROID PHOTOS */
+/* ========================================= */
+
+.polaroid {
+    width: 260px;
+
+    margin: 20px 0 35px;
+
+    padding: 12px 12px 35px;
+
+    background-color: white;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+    transform: rotate(-3deg);
+}
+
+.polaroid img {
+    display: block;
+
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+}
+
+.polaroid-caption {
+    margin: 18px 0 0 !important;
+
+    font-size: 18px !important;
+    font-style: italic;
+
+    color: #711f2b !important;
+}
+/* ========================================= */
+/* PHONE / SMALL SCREEN */
+/* ========================================= */
+
+/* ========================================= */
+/* OUR MEMORIES */
+/* ========================================= */
+
+.memories {
+    min-height: 100vh;
+
+    padding: 100px 25px;
+
+    text-align: center;
+
+    background-color: #fff8f5;
+}
+
+.memories h2 {
+    margin: 15px 0;
+
+    font-size: 42px;
+
+    color: #711f2b;
+}
+
+.memories-intro {
+    margin-bottom: 50px;
+
+    font-size: 17px;
+    font-style: italic;
+
+    color: #87535a;
+}
+
+
+/* PHOTO WALL */
+
+.photo-wall {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 35px;
+}
+
+
+/* DIFFERENT POLAROID ANGLES */
+
+.memory-one {
+    transform: rotate(-5deg);
+}
+
+.memory-two {
+    transform: rotate(4deg);
+}
+
+.memory-three {
+    transform: rotate(3deg);
+}
+
+.memory-four {
+    transform: rotate(-4deg);
+}
+
+
+/* LITTLE HOVER EFFECT */
+
+.photo-wall .polaroid {
+    transition: transform 0.3s ease;
+}
+
+.photo-wall .polaroid:hover {
+    transform: rotate(0deg) scale(1.05);
+}
+/* ========================================= */
+/* LOVE NOTES */
+/* ========================================= */
+
+.love-notes {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 100px 25px;
+
+    text-align: center;
+
+    background-color: #f9ece9;
+}
+
+.love-notes h2 {
+    margin: 15px 0;
+
+    font-size: 42px;
+
+    color: #711f2b;
+}
+
+.love-intro {
+    margin-bottom: 40px;
+
+    color: #87535a;
+
+    font-style: italic;
+}
+
+
+/* ENVELOPE GRID */
+
+.envelope-grid {
+    width: 100%;
+    max-width: 650px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* ENVELOPES */
+
+.envelope {
+    margin: 0;
+
+    padding: 25px 10px;
+
+    background-color: #fff8f5;
+
+    border: 1px solid #e3c5c7;
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    transition: transform 0.2s ease;
+}
+
+.envelope:hover {
+    background-color: white;
+
+    transform: translateY(-5px);
+}
+
+.envelope span {
+    display: block;
+
+    font-size: 45px;
+
+    margin-bottom: 8px;
+}
+
+.envelope small {
+    margin: 0;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: #a45a63;
+}
+
+
+/* MESSAGE THAT APPEARS */
+
+.note-display {
+    max-width: 550px;
+
+    min-height: 100px;
+
+    margin-top: 40px;
+
+    padding: 25px 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff8f5;
+
+    border-radius: 10px;
+
+    font-size: 20px;
+    font-style: italic;
+
+    line-height: 1.6;
+
+    color: #711f2b;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+/* ========================================= */
+/* RELATIONSHIP QUESTIONNAIRE */
+/* ========================================= */
+
+.questionnaire {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 100px 25px;
+
+    text-align: center;
+
+    background-color: #fff8f5;
+}
+
+.questionnaire h2 {
+    max-width: 600px;
+
+    margin: 15px 0;
+
+    font-size: 42px;
+
+    color: #711f2b;
+}
+
+.question-warning {
+    margin-bottom: 40px;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: #87535a;
+}
+
+
+/* QUESTION CARD */
+
+.question-card {
+    width: 100%;
+    max-width: 550px;
+
+    padding: 40px 30px;
+
+    background-color: white;
+
+    border: 1px solid #ead4d5;
+    border-radius: 15px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.question-label {
+    font-family: Arial, sans-serif;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    color: #bd8188;
+}
+
+.question-card h3 {
+    margin: 25px 0 35px;
+
+    font-size: 30px;
+
+    color: #711f2b;
+}
+
+
+/* YES + NO BUTTON AREA */
+
+.answer-buttons {
+    min-height: 100px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.answer-buttons button {
+    width: 140px;
+
+    margin: 0;
+}
+
+
+/* YES */
+
+#yes-button {
+    background-color: #711f2b;
+
+    color: white;
+}
+
+#yes-button:hover {
+    background-color: #8d2938;
+}
+
+
+/* NO */
+
+#no-button {
+    background-color: #eeeeee;
+
+    color: #555;
+}
+
+
+/* ANSWER */
+
+#answer-message {
+    margin-top: 25px;
+
+    min-height: 50px;
+
+    font-size: 18px;
+    font-style: italic;
+
+    line-height: 1.6;
+
+    color: #711f2b;
+}
+/* ========================================= */
+/* LOVE LETTER */
+/* ========================================= */
+
+.love-letter-section {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 100px 25px;
+
+    text-align: center;
+
+    background-color: #f9ece9;
+}
+
+.love-letter-section h2 {
+    margin: 15px 0;
+
+    font-size: 42px;
+
+    color: #711f2b;
+}
+
+.letter-intro {
+    margin-bottom: 40px;
+
+    font-style: italic;
+
+    color: #87535a;
+}
+
+
+/* CLOSED ENVELOPE */
+
+.letter-envelope {
+    width: 100%;
+    max-width: 450px;
+
+    padding: 40px 30px;
+
+    background-color: #fff8f5;
+
+    border: 1px solid #e3c5c7;
+    border-radius: 15px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.big-envelope {
+    margin-bottom: 20px;
+
+    font-size: 75px;
+}
+
+.letter-to {
+    margin-bottom: 8px;
+
+    font-size: 22px;
+
+    color: #711f2b;
+}
+
+.letter-from {
+    font-size: 14px;
+    font-style: italic;
+
+    color: #a45a63;
+}
+
+#open-letter-button {
+    max-width: 200px;
+
+    background-color: #711f2b;
+
+    color: white;
+}
+
+
+/* ========================================= */
+/* ACTUAL LETTER */
+/* ========================================= */
+
+.actual-letter {
+    display: none;
+
+    width: 100%;
+    max-width: 700px;
+
+    padding: 55px 50px;
+
+    background-color: #fffdf8;
+
+    text-align: left;
+
+    border-radius: 5px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.actual-letter p {
+    font-size: 17px;
+
+    line-height: 1.9;
+
+    color: #57373a;
+}
+
+.letter-heading {
+    margin-top: 0;
+
+    font-size: 24px !important;
+
+    color: #711f2b !important;
+}
+
+
+/* SIGNATURE */
+
+.letter-signature {
+    margin-top: 40px;
+
+    font-size: 24px !important;
+    font-style: italic;
+
+    color: #711f2b !important;
+}
+
+
+/* ========================================= */
+/* ONE MORE THING */
+/* ========================================= */
+
+.one-more-thing {
+    margin-top: 60px;
+
+    padding-top: 35px;
+
+    text-align: center;
+
+    border-top: 1px solid #e3c5c7;
+}
+
+.one-more-thing p {
+    font-size: 16px;
+
+    font-style: italic;
+
+    color: #87535a;
+}
+
+#surprise-button {
+    max-width: 250px;
+
+    background-color: #711f2b;
+
+    color: white;
+}
+/* ========================================= */
+/* SURPRISE DATE */
+/* ========================================= */
+
+.date-surprise {
+    display: none;
+
+    width: 100%;
+
+    background-color: #fff8f5;
+
+    color: #711f2b;
+}
+
+
+/* OPENING */
+
+.date-opening {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 80px 25px;
+
+    text-align: center;
+}
+
+.date-small-title {
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    color: #bd8188;
+}
+
+.date-opening h2 {
+    margin: 20px 0;
+
+    font-size: 55px;
+
+    line-height: 1.15;
+
+    color: #711f2b;
+}
+
+.date-opening > p:not(.date-small-title) {
+    font-size: 20px;
+
+    font-style: italic;
+
+    color: #87535a;
+}
+
+.date-arrow {
+    margin-top: 70px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    color: #a45a63;
+}
+
+
+/* ========================================= */
+/* DATE STOPS */
+/* ========================================= */
+
+.date-stop {
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 80px 25px;
+
+    text-align: center;
+
+    background-color: #f9ece9;
+}
+
+.alternate-stop {
+    background-color: #fff8f5;
+}
+
+.date-number {
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    color: #bd8188;
+}
+
+.date-stop h3 {
+    margin: 15px 0 25px;
+
+    font-size: 45px;
+
+    color: #711f2b;
+}
+
+.date-stop > p:not(.date-number) {
+    max-width: 500px;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #87535a;
+}
+
+.date-joke {
+    margin-top: 25px;
+
+    font-style: italic;
+}
+
+
+/* ========================================= */
+/* FRIGHT FEST */
+/* ========================================= */
+
+.fright-fest-stop {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 100px 25px;
+
+    text-align: center;
+
+    background-color: #171212;
+
+    color: #fff8f5;
+}
+
+.fright-number {
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    color: #d69b72;
+}
+
+.fright-fest-stop h3 {
+    margin: 30px 0 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 65px;
+
+    letter-spacing: 5px;
+
+    color: #fff8f5;
+}
+
+.fright-fest-stop h4 {
+    margin: 5px 0 35px;
+
+    font-size: 40px;
+
+    letter-spacing: 4px;
+
+    color: #d87845;
+}
+
+.fright-fest-stop p:last-child {
+    max-width: 500px;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #e8d6cf;
+}
+
+
+/* ========================================= */
+/* FINAL CONFIRMATION */
+/* ========================================= */
+
+.date-confirmation {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 100px 25px;
+
+    text-align: center;
+
+    background-color: #711f2b;
+}
+
+.final-date-message {
+    margin-bottom: 45px;
+
+    font-size: 36px;
+
+    line-height: 1.4;
+
+    color: #fff8f5;
+}
+
+.confirmation-box {
+    width: 100%;
+    max-width: 550px;
+
+    padding: 30px;
+
+    background-color: #fff8f5;
+
+    border-radius: 12px;
+
+    text-align: left;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.confirmation-box p {
+    margin: 15px 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    color: #711f2b;
+}
+
+#attending-button {
+    max-width: 300px;
+
+    margin-top: 35px;
+
+    background-color: #fff8f5;
+
+    color: #711f2b;
+}
+
+#attendance-message {
+    min-height: 30px;
+
+    margin-top: 20px;
+
+    font-size: 18px;
+
+    color: #fff8f5;
+}
+@media (max-width: 600px) {
+
+    .verification-box {
+        padding: 25px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .story h2,
+    .first-meeting h2,
+    .first-date h2,
+    .first-summer h2,
+    .official h2 {
+        font-size: 34px;
+    }
+
+    .first-meeting p,
+    .first-date p,
+    .first-summer p,
+    .official p {
+        font-size: 16px;
+    }
+    .envelope-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.love-notes h2 {
+    font-size: 34px;
+}
+.questionnaire h2 {
+    font-size: 34px;
+}
+
+.question-card {
+    padding: 30px 20px;
+}
+.love-letter-section h2 {
+    font-size: 34px;
+}
+
+.actual-letter {
+    padding: 35px 25px;
+}
+
+.actual-letter p {
+    font-size: 16px;
+}
+.date-opening h2 {
+    font-size: 42px;
+}
+
+.date-stop h3 {
+    font-size: 36px;
+}
+
+.fright-fest-stop h3 {
+    font-size: 46px;
+}
+
+.fright-fest-stop h4 {
+    font-size: 30px;
+}
+
+.final-date-message {
+    font-size: 29px;
+}
+
+.confirmation-box {
+    padding: 22px 18px;
+}
+}
